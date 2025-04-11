@@ -1,0 +1,8 @@
+steps:
+- uses: actions/checkout@v4
+- name: setup python and say hi
+  uses: actions/setup-python@v5
+  with:
+    python-version: '3.x'
+- name: Run thing
+  run: python -m runme.py
